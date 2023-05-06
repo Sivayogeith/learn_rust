@@ -11,4 +11,22 @@ pub mod human {
         pub age: &'a i64,
         pub family: &'a Family<'a>,
     }
+
+    impl Human<'_> {
+        pub fn eat(&self) {
+            println!("I, {0} is eating!", self.full_name)
+        }
+
+        pub fn poo(&self) {
+            println!("I, {0} is pooing!", self.full_name)
+        }
+
+        pub fn sleep(&self) {
+            println!("I, {0} is sleeping!", self.full_name)
+        }
+
+        pub fn pee(&self) {
+            println!("I, {0} is peeing!", self.full_name)
+        }
+    }
 }

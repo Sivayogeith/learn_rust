@@ -14,4 +14,8 @@ fn main() {
         },
     };
     println!("Hi, My Name is {0}, I am {1} years old. My Father's name is {2}, My Mother's name is {3}, My Sister's name is {4}", yogi.full_name, yogi.age, yogi.family.father, yogi.family.mother, yogi.family.sister);
+    yogi.eat();
+    yogi.poo();
+    yogi.pee();
+    yogi.sleep();
 }
